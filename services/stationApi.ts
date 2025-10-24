@@ -10,7 +10,7 @@ export class StationApiService {
     searchParams.append('longitude', params.longitude.toString());
     searchParams.append('itemsPerPage', (params.itemsPerPage || 200).toString());
     searchParams.append('geo_distance', (params.geo_distance !== false).toString());
-    searchParams.append('distance', (params.distance || 1000).toString());
+    searchParams.append('distance', (params.distance || 10000).toString());
 
     return `${API_BASE_URL}/search/stations?${searchParams.toString()}`;
   }
