@@ -68,6 +68,7 @@ export default function Map({ className = '' }: MapProps) {
         zoomAnimation={true}
         fadeAnimation={true}
         markerZoomAnimation={true}
+        
       >
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
