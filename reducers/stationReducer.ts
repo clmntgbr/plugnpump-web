@@ -18,6 +18,7 @@ export const initialStationState: StationState = {
 };
 
 export function stationReducer(state: StationState, action: StationAction): StationState {
+  
   switch (action.type) {
     case 'SEARCH_STATIONS_START':
       return {

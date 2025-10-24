@@ -1,9 +1,9 @@
-import Map from '../components/Map';
+import { OpenStreetMap } from '@/components/OpenStreetMap';
 
 export default function Home() {
   return (
     <div className="min-h-screen">
-      <Map />
+      <OpenStreetMap />
     </div>
   );
 }

@@ -18,7 +18,6 @@ export class StationApiService {
   static async searchStations(params: StationSearchParams): Promise<Station[]> {
     try {
       const url = this.buildSearchUrl(params);
-      console.log('🔍 Searching stations:', url);
       
       const response = await fetch(url, {
         method: 'GET',
@@ -32,11 +31,9 @@ export class StationApiService {
       }
 
       const data: Station[] = await response.json();
-      console.log('✅ Stations found:', data.length, 'stations');
       
       return data;
     } catch (error) {
-      console.error('❌ Error searching stations:', error);
       throw error;
     }
   }
